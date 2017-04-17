@@ -19,9 +19,7 @@ public class SPUtil {
     public static String USER_ID = "USER_ID";//用户id
     public static String USER_NAME = "USER_NAME";//用户名
     public static String USER_Mobile = "USER_MOBILE";//用户手机号
-    public static String USER_MyImg = "USER_MyImg";//用户头像
-
-    public static String USER_ID_S;
+    public static String USER_IMAGE = "USER_IMAGE";//用户头像
 
     /**
      * 获取用户id
