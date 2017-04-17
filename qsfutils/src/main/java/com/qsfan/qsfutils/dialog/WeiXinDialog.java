@@ -23,7 +23,6 @@ import com.qsfan.qsfutils.R;
  */
 
 public class WeiXinDialog {
-
     public static Dialog showDialog(Context context, String msg) {
         LayoutInflater inflater = LayoutInflater.from(context);
         View v = inflater.inflate(R.layout.dialog_loading, null);// 得到加载view
