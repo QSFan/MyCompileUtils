@@ -1,4 +1,4 @@
-package com.qsfan.qsfutils;
+package com.qsfan.qsfutils.utils;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;

@@ -3,7 +3,7 @@ package com.qsfan.mycompileutils;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-import com.qsfan.qsfutils.ToastUtil;
+import com.qsfan.qsfutils.utils.ToastUtil;
 
 public class MainActivity extends AppCompatActivity {
 

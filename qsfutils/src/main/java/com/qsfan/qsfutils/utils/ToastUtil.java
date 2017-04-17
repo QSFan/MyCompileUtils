@@ -1,4 +1,4 @@
-package com.qsfan.qsfutils;
+package com.qsfan.qsfutils.utils;
 
 import android.app.Activity;
 import android.content.Context;
