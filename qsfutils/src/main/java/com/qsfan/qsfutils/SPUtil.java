@@ -4,7 +4,15 @@ import android.content.Context;
 import android.content.SharedPreferences;
 
 /**
- * Created by Administrator on 2016/8/9.
+ * ==============版权所有===============
+ * <p/>
+ * 类注释: SharedPreferences工具类
+ * 作者: QSFan
+ * 邮箱: qsfan_vip.163.com
+ * 时间: 2017/4/17 15:46
+ * 版本:
+ * 备注：
+ * ==============版权所有===============
  */
 public class SPUtil {
 
@@ -21,7 +29,7 @@ public class SPUtil {
      * @param context
      * @return
      */
-    public String getUId(Context context) {
+    public static String getUId(Context context) {
         return SPUtil.getParam(context, SPUtil.USER_ID, "").toString();
     }
 
