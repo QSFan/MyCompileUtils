@@ -19,9 +19,9 @@ import java.util.List;
 
 /**
  * ==============版权所有===============
- *
+ * <p/>
  * 类注释:  继承了Activity，实现Android6.0的运行时权限检测
- * 			需要进行运行时权限检测的Activity可以继承这个类
+ * 需要进行运行时权限检测的Activity可以继承这个类
  * 作者: QSFan
  * 邮箱: qsfan_vip.163.com
  * 时间: 2017/4/17 16:51
@@ -36,11 +36,13 @@ public class CheckPermissionsActivity extends AppCompatActivity
      * 需要进行检测的权限数组
      */
     protected String[] needPermissions = {
+            Manifest.permission.INTERNET,
             Manifest.permission.ACCESS_COARSE_LOCATION,
             Manifest.permission.ACCESS_FINE_LOCATION,
             Manifest.permission.WRITE_EXTERNAL_STORAGE,
             Manifest.permission.READ_EXTERNAL_STORAGE,
-            Manifest.permission.READ_PHONE_STATE
+            Manifest.permission.READ_PHONE_STATE,
+            Manifest.permission.CAMERA
     };
 
     private static final int PERMISSON_REQUESTCODE = 0;
@@ -59,10 +61,8 @@ public class CheckPermissionsActivity extends AppCompatActivity
     }
 
     /**
-     *
      * @param
      * @since 2.5.0
-     *
      */
     private void checkPermissions(String... permissions) {
         List<String> needRequestPermissonList = findDeniedPermissions(permissions);
@@ -81,7 +81,6 @@ public class CheckPermissionsActivity extends AppCompatActivity
      * @param permissions
      * @return
      * @since 2.5.0
-     *
      */
     private List<String> findDeniedPermissions(String[] permissions) {
         List<String> needRequestPermissonList = new ArrayList<String>();
@@ -98,10 +97,10 @@ public class CheckPermissionsActivity extends AppCompatActivity
 
     /**
      * 检测是否说有的权限都已经授权
+     *
      * @param grantResults
      * @return
      * @since 2.5.0
-     *
      */
     private boolean verifyPermissions(int[] grantResults) {
         for (int result : grantResults) {
@@ -127,7 +126,6 @@ public class CheckPermissionsActivity extends AppCompatActivity
      * 显示提示信息
      *
      * @since 2.5.0
-     *
      */
     private void showMissingPermissionDialog() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
@@ -157,10 +155,9 @@ public class CheckPermissionsActivity extends AppCompatActivity
     }
 
     /**
-     *  启动应用的设置
+     * 启动应用的设置
      *
      * @since 2.5.0
-     *
      */
     private void startAppSettings() {
         Intent intent = new Intent(
