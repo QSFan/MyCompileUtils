@@ -1,0 +1,17 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/a"
+    tools:context="com.qsfan.mycompileutils.activity.Test3Activity">
+
+    <RelativeLayout style="@style/Title_RelativeLayout">
+
+        <TextView
+            style="@style/Title_RelativeLayout_Text"
+            android:text="Test3Activity" />
+    </RelativeLayout>
+
+</LinearLayout>
+

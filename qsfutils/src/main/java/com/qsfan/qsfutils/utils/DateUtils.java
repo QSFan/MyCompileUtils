@@ -223,6 +223,11 @@ public class DateUtils {
 
     }
 
+    /**
+     * 根据时间戳获取星期
+     * @param timeStamp
+     * @return
+     */
     private static String getWeek(long timeStamp) {
         int mydate = 0;
         String week = null;

@@ -12,16 +12,17 @@ import android.widget.TextView;
 
 import com.qsfan.qsfutils.R;
 
-
-/**
+/** 
+ * ==============版权所有===============
+ *  
  * 类注释: 仿微信加载框
  * 作者: QSFan
  * 邮箱: qsfan_vip.163.com
- * 时间: 2017/2/16 13:47
- * 版本:
+ * 时间: 2017/4/18 16:10 
+ * 版本: 
  * 备注：
- */
-
+ * ==============版权所有===============
+*/
 public class WeiXinDialog {
     public static Dialog showDialog(Context context, String msg) {
         LayoutInflater inflater = LayoutInflater.from(context);

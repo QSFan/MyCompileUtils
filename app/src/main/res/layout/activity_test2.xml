@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/d"
+    tools:context="com.qsfan.mycompileutils.activity.Test2Activity">
+
+    <RelativeLayout style="@style/Title_RelativeLayout">
+
+        <TextView
+            style="@style/Title_RelativeLayout_Text"
+            android:text="Test2Activity" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/bt_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/shape10_cc1_white"
+        android:text="跳转Activity3"/>
+
+</LinearLayout>
+

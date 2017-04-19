@@ -1,1 +1,1 @@
-include ':app', ':qsfutils'
+include ':app', ':qsfutils', ':bgalibrary'

@@ -1,8 +1,15 @@
 <resources>
-
-
+    <!--标头标题样式-->
+    <style name="Title_RelativeLayout_Text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textSize">20sp</item>
+    </style>
     <!--标头标题返回按钮样式样式-->
-    <style name="title_left_back_style">
+    <style name="TitleLeftGoBack">
         <item name="android:layout_width">45dp</item>
         <item name="android:layout_height">match_parent</item>
         <item name="android:paddingTop">6dp</item>

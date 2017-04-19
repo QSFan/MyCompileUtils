@@ -19,7 +19,7 @@ import java.util.List;
 
 /**
  * ==============版权所有===============
- * <p/>
+ *
  * 类注释:  继承了Activity，实现Android6.0的运行时权限检测
  * 需要进行运行时权限检测的Activity可以继承这个类
  * 作者: QSFan

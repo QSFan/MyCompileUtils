@@ -8,10 +8,12 @@ import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
+import android.net.Uri;
 import android.os.CountDownTimer;
 import android.util.Log;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.qsfan.qsfutils.R;
@@ -41,7 +43,19 @@ public class PublicUtils {
         }
         return versionName;
     }
-
+    /**
+     * 取APP版本号
+     * @return
+     */
+    public static int getAppVersionCode(Context context){
+        try {
+            PackageManager mPackageManager = context.getPackageManager();
+            PackageInfo _info = mPackageManager.getPackageInfo(context.getPackageName(),0);
+            return _info.versionCode;
+        } catch (PackageManager.NameNotFoundException e) {
+            return 0;
+        }
+    }
     /**
      * 检查是否有网络
      *
@@ -147,6 +161,37 @@ public class PublicUtils {
                         .error(R.drawable.waiting)//设置加载错误图片
                         .into(imageView);
             }
+        }
+    }
+
+
+    /**
+     * 打开QQ客服
+     *
+     * @param context
+     * @param qq      QQ号
+     */
+    public static void OpenQQKeFu(Context context, String qq) {
+        if (ApkIsExist(context, "com.tencent.mobileqq")) {
+            String url = "mqqwpa://im/chat?chat_type=wpa&uin=" + qq;
+            context.startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(url)));
+        } else {
+            Toast.makeText(context, "请先安装QQ", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    public static boolean ApkIsExist(Context context, String packageName) {
+        PackageInfo packageInfo;
+        try {
+            packageInfo = context.getPackageManager().getPackageInfo(packageName, 0);
+        } catch (PackageManager.NameNotFoundException e) {
+            packageInfo = null;
+            e.printStackTrace();
+        }
+        if (packageInfo == null) {
+            return false;
+        } else {
+            return true;
         }
     }
 
