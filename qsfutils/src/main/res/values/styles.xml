@@ -18,6 +18,35 @@
         <item name="android:src">@drawable/go_back_white</item>
     </style>
 
+    <!--标头标题返回按钮样式样式-->
+    <style name="TitleLeftBlackGoBack">
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:paddingTop">6dp</item>
+        <item name="android:paddingBottom">6dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:src">@drawable/left_go_back_black</item>
+    </style>
+
+    <!--标头标题返回按钮样式样式-->
+    <style name="TitleRightBlackGoBack">
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:paddingTop">6dp</item>
+        <item name="android:paddingBottom">6dp</item>
+        <item name="android:paddingRight">12dp</item>
+        <item name="android:src">@drawable/right_go_back_black</item>
+    </style>
+    <!--标头标题返回按钮样式样式-->
+    <style name="TitleRightGoBack">
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:paddingTop">6dp</item>
+        <item name="android:paddingBottom">6dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:src">@drawable/right_go_back_white</item>
+    </style>
+
     <!-- popup window 显示消失动画-->
     <style name="PopWindowAnimStyle">
         <item name="android:windowShowAnimation">@anim/dialog_enter</item>
