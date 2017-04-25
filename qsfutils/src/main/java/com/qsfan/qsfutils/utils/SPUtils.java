@@ -42,10 +42,20 @@ public final class SPUtils {
 
     /**
      * 获取用户ID，不存在返回null
+     *
      * @return
      */
     public static String getUid() {
         return SPUtils.getString(SPUtils.USER_ID);
+    }
+
+    /**
+     * 储存用户ID
+     *
+     * @param uid
+     */
+    public static void setUid(String uid) {
+        SPUtils.put(SPUtils.USER_ID, uid);
     }
 
     /**

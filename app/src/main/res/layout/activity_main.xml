@@ -14,4 +14,11 @@
         android:background="@drawable/shape10_red1_white"
         android:padding="5dp"
         android:text="测试滑动返回布局的接口" />
+
+    <Button
+        android:id="@+id/bt_get_v"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:text="哈哈" />
 </RelativeLayout>

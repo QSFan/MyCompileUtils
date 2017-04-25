@@ -1,14 +1,18 @@
 package com.qsfan.qsfutils.utils;
 
+import android.annotation.TargetApi;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
+import android.graphics.Color;
+import android.graphics.drawable.Drawable;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.net.Uri;
+import android.os.Build;
 import android.os.CountDownTimer;
 import android.util.Log;
 import android.widget.ImageView;
@@ -17,7 +21,6 @@ import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.qsfan.qsfutils.R;
-
 
 
 /**
@@ -43,19 +46,22 @@ public class PublicUtils {
         }
         return versionName;
     }
+
     /**
      * 取APP版本号
+     *
      * @return
      */
-    public static int getAppVersionCode(Context context){
+    public static int getAppVersionCode(Context context) {
         try {
             PackageManager mPackageManager = context.getPackageManager();
-            PackageInfo _info = mPackageManager.getPackageInfo(context.getPackageName(),0);
+            PackageInfo _info = mPackageManager.getPackageInfo(context.getPackageName(), 0);
             return _info.versionCode;
         } catch (PackageManager.NameNotFoundException e) {
             return 0;
         }
     }
+
     /**
      * 检查是否有网络
      *
@@ -119,16 +125,20 @@ public class PublicUtils {
      * @param meg  倒计时结束需要展示的文字
      */
     public static void downTime(final TextView view, final String meg) {
+        final Drawable background = view.getBackground();
         CountDownTimer countDownTimer = new CountDownTimer(60000, 1000) {
             @Override
             public void onTick(long millisUntilFinished) {
                 view.setText(millisUntilFinished / 1000 + "秒");
+                view.setBackgroundColor(Color.parseColor("#FFA4A4A4"));
                 view.setEnabled(false);
             }
 
+            @TargetApi(Build.VERSION_CODES.JELLY_BEAN)
             @Override
             public void onFinish() {
                 view.setEnabled(true);
+                view.setBackground(background);
                 view.setText(meg);
             }
         };
@@ -164,6 +174,35 @@ public class PublicUtils {
         }
     }
 
+    /**
+     * 使用Glide加载图片
+     *
+     * @param context
+     * @param url          图片地址
+     * @param imageView    加载图片控件
+     * @param defaultImage 默认显示图片
+     * @param errorImage   加载失败图片
+     */
+    public static void setNetImage(Context context, String url, ImageView imageView, int defaultImage, int errorImage) {
+        if (url != null && !url.isEmpty()) {
+            String substring = url.substring(0, 4);
+            if (substring.equals("http")) {
+                Glide.with(context).load(url)
+//                        .skipMemoryCache(true)//跳过加载到内存
+                        .asBitmap()
+                        .placeholder(defaultImage)//设置默认图片
+                        .error(errorImage)//设置加载错误图片
+                        .into(imageView);
+            } else {
+                Glide.with(context).load(url)
+//                        .skipMemoryCache(true)
+                        .asBitmap()
+                        .placeholder(defaultImage)//设置默认图片
+                        .error(errorImage)//设置加载错误图片
+                        .into(imageView);
+            }
+        }
+    }
 
     /**
      * 打开QQ客服
