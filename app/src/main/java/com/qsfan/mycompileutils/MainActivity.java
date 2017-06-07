@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.qsfan.mycompileutils.activity.ActivityBGAtest1;
@@ -14,6 +15,7 @@ public class MainActivity extends BaseActivity {
 
     private TextView tv_cehuan;
     private Button bt_get_v;
+    private LinearLayout ll_add_permission;
 
 //    @Override
 //    protected void onCreate(Bundle savedInstanceState) {
@@ -52,6 +54,7 @@ public class MainActivity extends BaseActivity {
     private void initView() {
         tv_cehuan = (TextView) findViewById(R.id.tv_cehuan);
         bt_get_v = (Button) findViewById(R.id.bt_get_v);
+        ll_add_permission = (LinearLayout) findViewById(R.id.ll_add_permission);
         tv_cehuan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -64,5 +67,18 @@ public class MainActivity extends BaseActivity {
                 PublicUtils.downTime(bt_get_v, "获取验证码");
             }
         });
+
+        ll_add_permission.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+    }
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        // TODO: add setContentView(...) and run LayoutCreator again
     }
 }

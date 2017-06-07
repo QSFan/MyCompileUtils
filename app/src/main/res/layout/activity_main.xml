@@ -24,16 +24,21 @@
         android:text="哈哈" />
 
     <LinearLayout
+        android:id="@+id/ll_add_permission"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:background="#fff"
+        android:gravity="center"
         android:orientation="horizontal">
-<TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="hahahha"
-    android:layout_weight="1"/>
-        <ImageView
-            style="@style/ItemRightBlackGo"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_weight="1"
+            android:text="添加权限"
+            android:textSize="16sp" />
+
+        <ImageView style="@style/ItemRightBlackGo" />
     </LinearLayout>
 </LinearLayout>
