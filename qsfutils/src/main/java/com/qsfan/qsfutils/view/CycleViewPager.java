@@ -33,16 +33,24 @@ public class CycleViewPager extends ViewPager {
 
             setCurrentItem(getCurrentItem() + 1);
             //再次发送消息
-            handler.sendEmptyMessageDelayed(2, 2000);
+            handler.sendEmptyMessageDelayed(1, 2000);
         }
 
         ;
     };
 
+    /**
+     * 启动轮播
+     */
     public void startSocll() {
-
         handler.sendEmptyMessageDelayed(1, 2000);
+    }
 
+    /**
+     * 暂停轮播
+     */
+    public void stopSocll() {
+        handler.removeMessages(1);
     }
 
     public class MyPagerChangeListener implements OnPageChangeListener {

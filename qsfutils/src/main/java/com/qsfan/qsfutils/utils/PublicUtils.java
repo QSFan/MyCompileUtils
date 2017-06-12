@@ -205,6 +205,24 @@ public class PublicUtils {
     }
 
     /**
+     * 使用Glide加载图片
+     *
+     * @param context
+     * @param url          加载本地图片传图片ID
+     * @param imageView    加载图片控件
+     * @param defaultImage 默认显示图片
+     * @param errorImage   加载失败图片
+     */
+    public static void setNetImage(Context context, int url, ImageView imageView, int defaultImage, int errorImage) {
+        Glide.with(context).load(url)
+//                        .skipMemoryCache(true)
+                .asBitmap()
+                .placeholder(defaultImage)//设置默认图片
+                .error(errorImage)//设置加载错误图片
+                .into(imageView);
+    }
+
+    /**
      * 打开QQ客服
      *
      * @param context
