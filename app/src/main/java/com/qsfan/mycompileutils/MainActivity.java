@@ -9,13 +9,15 @@ import android.widget.TextView;
 
 import com.qsfan.mycompileutils.activity.ActivityBGAtest1;
 import com.qsfan.mycompileutils.activity.BaseActivity;
+import com.qsfan.mycompileutils.address.picker.AddressInitTask;
 import com.qsfan.qsfutils.utils.PublicUtils;
 
-public class MainActivity extends BaseActivity {
+public class MainActivity extends BaseActivity implements View.OnClickListener {
 
     private TextView tv_cehuan;
     private Button bt_get_v;
     private LinearLayout ll_add_permission;
+    private Button bt_address;
 
 //    @Override
 //    protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +41,7 @@ public class MainActivity extends BaseActivity {
     protected void initView(Bundle savedInstanceState) {
         setContentView(R.layout.activity_main);
         initView();
+
     }
 
     @Override
@@ -74,11 +77,31 @@ public class MainActivity extends BaseActivity {
 
             }
         });
+        bt_address = (Button) findViewById(R.id.bt_address);
+        bt_address.setOnClickListener(this);
     }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         // TODO: add setContentView(...) and run LayoutCreator again
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.bt_address:
+                AddressInitTask addressInitTask = new AddressInitTask(this);
+                addressInitTask.execute("河南", "郑州", "二七区");
+                addressInitTask.setOnAddressListener(new AddressInitTask.OnAddressListener() {
+                    @Override
+                    public void onAdressListener(String sheng, String shi, String qu, String shiID, String xianID) {
+                   bt_address.setText(sheng+"  "+shi+"  "+qu);
+//                        ToastUtil.showToastInThread(getActivity(), "市ID：" + shiID + "\n县ID:" + xianID);
+
+                    }
+                });
+                break;
+        }
     }
 }

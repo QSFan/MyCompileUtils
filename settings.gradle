@@ -1,1 +1,1 @@
-include ':app', ':qsfutils', ':bgalibrary'
+include ':app', ':qsfutils', ':bgalibrary', ':Common', ':ColorPicker', ':FilePicker', ':WheelPicker'

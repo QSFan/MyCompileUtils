@@ -41,4 +41,11 @@
 
         <ImageView style="@style/ItemRightBlackGo" />
     </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:text="选择地址" />
 </LinearLayout>

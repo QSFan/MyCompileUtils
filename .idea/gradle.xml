@@ -8,6 +8,10 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/ColorPicker" />
+            <option value="$PROJECT_DIR$/Common" />
+            <option value="$PROJECT_DIR$/FilePicker" />
+            <option value="$PROJECT_DIR$/WheelPicker" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/bgalibrary" />
             <option value="$PROJECT_DIR$/qsfutils" />
@@ -16,6 +20,10 @@
         <option name="myModules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/ColorPicker" />
+            <option value="$PROJECT_DIR$/Common" />
+            <option value="$PROJECT_DIR$/FilePicker" />
+            <option value="$PROJECT_DIR$/WheelPicker" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/bgalibrary" />
             <option value="$PROJECT_DIR$/qsfutils" />
