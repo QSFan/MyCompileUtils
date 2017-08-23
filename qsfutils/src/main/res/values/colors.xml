@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_white">#FFf</color>
+    <color name="color_fengexian">#efefef</color>
+    <color name="color_red">#e94646</color>
+    <color name="color_orange">#f7a43e</color>
+    <color name="color_yellow">#f1e653</color>
+    <color name="color_green">#4cf52e</color>
+    <color name="color_blue">#4c70e9</color>
+    <color name="color_black">#1b1b1b</color>
+    <color name="color_black_down">#494949</color>
+</resources>
