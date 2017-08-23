@@ -1,5 +1,29 @@
 [
     {
+        "outputFile": "E:\\AndroidWorkSpace\\MyCompileUtils\\WheelPicker\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-w360dp-v13\\values-w360dp-v13.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 54,
+                    "endOffset": 105
+                },
+                "from": {
+                    "file": "C:\\Users\\qishi\\.android\\build-cache\\38309336e17cf921216d1e16a4d9cf8aaba98817\\output\\res\\values-w360dp-v13\\values-w360dp-v13.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 54,
+                        "endOffset": 105
+                    }
+                }
+            }
+        ]
+    },
+    {
         "outputFile": "E:\\AndroidWorkSpace\\MyCompileUtils\\WheelPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\values-w360dp-v13\\values-w360dp-v13.xml",
         "map": [
             {

@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="E:\AndroidWorkSpace\MyCompileUtils\WheelPicker\src\main\assets"/></dataSet><dataSet config="debug"><source path="E:\AndroidWorkSpace\MyCompileUtils\WheelPicker\src\debug\assets"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="E:\AndroidWorkSpace\MyCompileUtils\WheelPicker\src\main\assets"/><source path="E:\AndroidWorkSpace\MyCompileUtils\WheelPicker\build\generated\assets\shaders\debug"/></dataSet><dataSet config="debug"><source path="E:\AndroidWorkSpace\MyCompileUtils\WheelPicker\src\debug\assets"/></dataSet></merger>
