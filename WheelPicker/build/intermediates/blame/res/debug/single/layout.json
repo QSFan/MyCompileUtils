@@ -1,23 +1,23 @@
 [
     {
-        "merged": "E:\\AndroidWorkSpace\\MyCompileUtils\\WheelPicker\\build\\intermediates\\res\\merged\\debug\\layout\\support_simple_spinner_dropdown_item.xml",
-        "source": "C:\\Users\\qishi\\.android\\build-cache\\2bd59c88d8e0d73a8c174f066dbfa92aadbd3db7\\output\\res\\layout\\support_simple_spinner_dropdown_item.xml"
-    },
-    {
         "merged": "E:\\AndroidWorkSpace\\MyCompileUtils\\WheelPicker\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_lines_media.xml",
         "source": "C:\\Users\\qishi\\.android\\build-cache\\2bd59c88d8e0d73a8c174f066dbfa92aadbd3db7\\output\\res\\layout\\notification_template_lines_media.xml"
+    },
+    {
+        "merged": "E:\\AndroidWorkSpace\\MyCompileUtils\\WheelPicker\\build\\intermediates\\res\\merged\\debug\\layout\\support_simple_spinner_dropdown_item.xml",
+        "source": "C:\\Users\\qishi\\.android\\build-cache\\2bd59c88d8e0d73a8c174f066dbfa92aadbd3db7\\output\\res\\layout\\support_simple_spinner_dropdown_item.xml"
     },
     {
         "merged": "E:\\AndroidWorkSpace\\MyCompileUtils\\WheelPicker\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_checkbox.xml",
         "source": "C:\\Users\\qishi\\.android\\build-cache\\2bd59c88d8e0d73a8c174f066dbfa92aadbd3db7\\output\\res\\layout\\abc_list_menu_item_checkbox.xml"
     },
     {
-        "merged": "E:\\AndroidWorkSpace\\MyCompileUtils\\WheelPicker\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_lines.xml",
-        "source": "C:\\Users\\qishi\\.android\\build-cache\\38309336e17cf921216d1e16a4d9cf8aaba98817\\output\\res\\layout\\notification_template_lines.xml"
-    },
-    {
         "merged": "E:\\AndroidWorkSpace\\MyCompileUtils\\WheelPicker\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_icon_group.xml",
         "source": "C:\\Users\\qishi\\.android\\build-cache\\2bd59c88d8e0d73a8c174f066dbfa92aadbd3db7\\output\\res\\layout\\notification_template_icon_group.xml"
+    },
+    {
+        "merged": "E:\\AndroidWorkSpace\\MyCompileUtils\\WheelPicker\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_lines.xml",
+        "source": "C:\\Users\\qishi\\.android\\build-cache\\38309336e17cf921216d1e16a4d9cf8aaba98817\\output\\res\\layout\\notification_template_lines.xml"
     },
     {
         "merged": "E:\\AndroidWorkSpace\\MyCompileUtils\\WheelPicker\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_header_item_layout.xml",
