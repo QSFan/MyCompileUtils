@@ -38,7 +38,7 @@
         <item name="android:src">@drawable/right_go_back_black</item>
     </style>
 
-    <!--标头标题返回按钮样式样式-->
+    <!--个人中心条目右箭头-->
     <style name="ItemRightBlackGo">
         <item name="android:layout_width">50dp</item>
         <item name="android:layout_height">match_parent</item>
@@ -46,6 +46,27 @@
         <item name="android:paddingBottom">10dp</item>
         <item name="android:paddingRight">10dp</item>
         <item name="android:src">@drawable/right_go_back_black</item>
+    </style>
+    <!--个人中心条目样式-->
+    <style name="ItemLayoutStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <!--个人中心条目左图片-->
+    <style name="ItemImageStytle">
+        <item name="android:layout_width">26dp</item>
+        <item name="android:layout_height">26dp</item>
+        <item name="android:layout_margin">10dp</item>
+    </style>
+    <!--个人中心条目字体-->
+    <style name="ItemTextStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">#111</item>
+        <item name="android:textSize">15sp</item>
     </style>
 
     <!--标头标题返回按钮样式样式-->
@@ -88,33 +109,33 @@
     <style name="fen_ge_xian_heng_1dp_cc">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">1dp</item>
-        <item name="android:background">#ccc</item>
+        <item name="android:background">#efefef</item>
     </style>
     <!--10dp横分割线-->
     <style name="fen_ge_xian_heng_10dp_cc">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">10dp</item>
-        <item name="android:background">#ccc</item>
+        <item name="android:background">#efefef</item>
     </style>
 
     <!--20dp横分割线-->
     <style name="fen_ge_xian_heng_20dp_cc">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">20dp</item>
-        <item name="android:background">#ccc</item>
+        <item name="android:background">#efefef</item>
     </style>
     <!--1dp竖分割线-->
     <style name="fen_ge_xian_shu_1dp_cc">
         <item name="android:layout_width">1dp</item>
         <item name="android:layout_height">match_parent</item>
-        <item name="android:background">#ccc</item>
+        <item name="android:background">#efefef</item>
     </style>
 
     <!--1dp竖分割线-->
     <style name="fen_ge_xian_heng_05dp_cc">
-        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_width">0.5dp</item>
         <item name="android:layout_height">match_parent</item>
-        <item name="android:background">#ccc</item>
+        <item name="android:background">#efefef</item>
     </style>
     ----------------------↑↑↑↑↑↑↑↑----分割线style----↑↑↑↑↑↑↑↑↑-------------------------------------
 </resources>
